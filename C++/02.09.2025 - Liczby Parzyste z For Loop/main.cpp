@@ -8,8 +8,7 @@ int main()
        // Najpierw wypisujemy w konsoli nasz tekst za pomoca "cout"
        // Warto zapamietac ze strzalki musza w tym przypadku byc w strone slowa "cout"
 
-       // Pozniej dajemy uzytkownikowi opcje wpisania liczby ktora zostanie przypisana do
-       // naszej zmiennej "n" zdeklarowanej wyzej w linii 6
+       // Pozniej dajemy uzytkownikowi opcje wpisania liczby ktora zostanie przypisana do naszej zmiennej "n" zdeklarowanej wyzej w linii 6
        // Tutaj tez warto zapamietac ze strzalki musza byc w PRZECIWNA STRONE niz slowo "cin"
 
        // A zeby zapamietac same slowa "cout" oraz "cin" wystarczy je rozdzielic np. cout to "c" + "out"
@@ -37,6 +36,7 @@ int main()
 
        // Iteracja 4:
        //     i = 4 czyli ta petla juz sie nie wykona bo nasz warunek to "i" jest mniejsze od "n" (czyli w tym przykladzie 3)
+       
        for (int i = 0, j = 0; i < n; i++, j+=2) 
        {
               cout << j << " "; // Wypisujemy nasza zmienna "j" i dodajemy po niej spacje
