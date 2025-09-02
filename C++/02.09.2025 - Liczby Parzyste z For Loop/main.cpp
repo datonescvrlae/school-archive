@@ -15,7 +15,7 @@ int main()
        cout << "Podaj ile liczb parzystych chcesz wyswietlic: ";
        cin >> n;
 
-       // Petle for mozna podzielic na 3 glowne elementy: "[zmienne]; [warunki]; [zmiany po petli]"
+       // Petle for mozna podzielic na 3 glowne elementy: "[zmienne]; [warunki]; [zmiany po powtorzeniu]"
        
        // W przypadku tej petli tworzymy dwie zmienne "i" oraz "j" ODDZIELONE PRZECINKIEM!!
        // Naszym warunkiem jest to ze dopoki "i" jest mniejsze niz "n" (ktore uzytkownik podal wyzej w "cin") petla dziala
