@@ -1,5 +1,5 @@
-#include <iostream>
-using namespace std;
+#include <iostream> // To daje nam dostep do "cout" oraz "cin"
+using namespace std; // Dzieki temu nie musimy pisac za kazdym razem np. std::cout tylko samo cout
 
 int main()
 {
