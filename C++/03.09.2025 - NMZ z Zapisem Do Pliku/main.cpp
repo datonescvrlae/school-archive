@@ -16,7 +16,7 @@ int main() {
     // W tym przypadku tez zapisujemy wszystkie rzeczy wpisane przez uzytkownika
         cout << "Podaj liczbe A: ";
         cin >> a;
-        userLog << a << endl;
+        userLog << a << endl; // W taki sposob wpisujemy do pliku
 
         cout << "Podaj liczbe B: ";
         cin >> b;
