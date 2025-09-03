@@ -18,7 +18,7 @@ int main() {
 
     // Tutaj ze wzorow matematycznych obliczamy delte oraz pierwiastek z delty (sqrtDelta)
     int delta = pow(b, 2) - 4 * a * c;
-    int sqrtDelta = sqrt(delta); // Funkcja "sqrt()" pierwiastkuje podana liczbe
+    float sqrtDelta = sqrt(delta); // Funkcja "sqrt()" pierwiastkuje podana liczbe (wazne jest aby byl to "float")
 
     cout << endl << "Wynik wynosi: " << endl; // Ten tekst chcemy wypisac zawsze bez wzgledu na wynik dlatego jest poza ifami
 
