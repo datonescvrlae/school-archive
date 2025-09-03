@@ -24,8 +24,8 @@ int main() {
 
     if (delta > 0) {
         // Dla delty wiekszej od 0 liczymy "x1" oraz "x2" ze wzorow matematycznych
-        int x1 = (-b - sqrtDelta) / (2 * a);
-        int x2 = (-b + sqrtDelta) / (2 * a);
+        float x1 = (-b - sqrtDelta) / (2 * a);
+        float x2 = (-b + sqrtDelta) / (2 * a);
 
         // I wypisujemy wyniki obu x'ow do konsoli
         cout << "x1 = " << x1 << endl;
@@ -33,7 +33,7 @@ int main() {
 
     } else if (delta == 0) {
         // Dla delty rownej 0 obliczamy "x0" tez z wzoru matematycznego
-        int x0 = -b / (2 * a);
+        float x0 = -b / (2 * a);
 
         cout << "x0 = " << x0;
 
