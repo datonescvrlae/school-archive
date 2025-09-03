@@ -3,7 +3,7 @@
 using namespace std; // Dzieki temu nie musimy pisac za kazdym razem np. std::cout tylko samo cout
 
 int main() {
-    int a, b, c; // Deklarujemy zmienne w ktorych zapiszemy liczby podane przez uzytkownika
+    float a, b, c; // Deklarujemy zmienne w ktorych zapiszemy liczby podane przez uzytkownika
 
     // Jeden po drugim pytamy uzytkownika o liczby "a", "b" oraz "c"
     // Wazne jest zeby strzalki byly w strone "cout" oraz w strone przeciwna do "cin"
@@ -17,7 +17,7 @@ int main() {
     cin >> c;
 
     // Tutaj ze wzorow matematycznych obliczamy delte oraz pierwiastek z delty (sqrtDelta)
-    int delta = pow(b, 2) - 4 * a * c;
+    float delta = pow(b, 2) - 4 * a * c;
     float sqrtDelta = sqrt(delta); // Funkcja "sqrt()" pierwiastkuje podana liczbe (wazne jest aby byl to "float")
 
     cout << endl << "Wynik wynosi: " << endl; // Ten tekst chcemy wypisac zawsze bez wzgledu na wynik dlatego jest poza ifami
