@@ -13,7 +13,7 @@ int main() {
     // Jeden po drugim pytamy uzytkownika o liczby "a", "b" oraz "c"
     // Wazne jest zeby strzalki byly w strone "cout" oraz w strone przeciwna do "cin"
 
-    // W tym przypadku tez zapisujemy wszystkie rzeczy wpisane przez uzytkownika
+    // W tym przypadku tez zapisujemy wszystkie rzeczy wpisane przez uzytkownika do pliku
         cout << "Podaj liczbe A: ";
         cin >> a;
         userLog << a << endl; // W taki sposob wpisujemy do pliku
@@ -58,7 +58,6 @@ int main() {
 
         cout << endl; // "endl" to po prostu zejscie linie nizej w konsoli
 
-    // Numer ASCII dla litery "t" wynosi 84 stad ta liczba w naszym ifie
     // Jezeli odpowiedz uzytkownika to "t" konczymy petle while
         if (endLoop == 't') { break; }
     }
