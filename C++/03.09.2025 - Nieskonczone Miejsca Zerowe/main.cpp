@@ -4,7 +4,7 @@ using namespace std; // Dzieki temu nie musimy pisac za kazdym razem np. std::co
 
 int main() {
     float a, b, c; // Deklarujemy zmienne w ktorych zapiszemy liczby podane przez uzytkownika
-    char endLoop; // Zmienna na odpowiedz uzytkownika w sprawie zakonczenia programu
+    char endLoop; // Zmienna na odpowiedz uzytkownika w sprawie zakonczenia programu (wazne zeby bylo typu "char")
 
     while (true) {
     // Jeden po drugim pytamy uzytkownika o liczby "a", "b" oraz "c"
