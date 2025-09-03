@@ -1,4 +1,5 @@
-// JEDYNA ROZNICA W TYM PLIKU TO "ios::app" W LINII 12
+// JEDYNA ROZNICA W TYM PLIKU TO "ios::app" W LINII 13
+// TA OPCJA OTWIERA PLIK W TRYBIE DOPISYWANIA ZAMIAST NADPISYWANIA
 
 #include <iostream> // Daje nam dostep do "cout" oraz "cin"
 #include <cmath> // A to daje nam dostep do potegowania oraz pierwiastkowania
