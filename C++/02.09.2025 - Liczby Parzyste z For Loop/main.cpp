@@ -42,7 +42,7 @@ int main()
               cout << j << " "; // Wypisujemy nasza zmienna "j" i dodajemy po niej spacje
        }
 
-       cout << endl; // "endl" to nic innego jak po prostu pusta linia
+       cout << endl; // "endl" to po prostu zejscie linie nizej w konsoli
 
        // Na samym koncu jezyk C++ wymaga od nas napisania "return 0;"
        // Nie wazne dlaczego po prostu trzeba o tym pamietac
