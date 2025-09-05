@@ -1,0 +1,83 @@
+.red-bg{
+    background-color: #FB8282;
+}
+
+.blue-bg{
+    background-color: #8295FB;
+}
+
+.light-grey-bg{
+    background-color: #CDCED1;
+}
+
+.transparent-grey-bg{
+    background-color: rgba(230, 230, 230, 0.75)
+}
+
+.main-box{
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+header{
+    margin-bottom: 15px;
+    font-size: larger;
+}
+
+button{
+    height: 30px;
+    width: 25%;
+    margin-right: 15px;
+}
+
+.nav-text{
+    flex: 50%;
+}
+
+nav{
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+article{
+    height: 40%;
+    flex: 58%;
+    margin-right: 15px;
+}
+
+aside{
+    flex: 38%;
+}
+
+footer{
+    margin-top: 15px;
+}
+
+section, .random-ass-box{
+    height: 20%;
+    margin-bottom: 20px;
+}
+
+.padding-stuff{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.padding-stuff-small{
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
