@@ -1,0 +1,73 @@
+<html>
+       <body>
+              Liczba 1: <input type="number" id="liczba1"> <br>
+              Liczba 2: <input type="number" id="liczba2"> <br><br>
+
+              <select id="opcja">
+                     <option value="1">Dodawanie</option>
+                     <option value="2">Odejmowanie</option>
+                     <option value="3">Mnozenie</option>
+                     <option value="4">Dzielenie</option>
+              </select> <br><br>
+
+              <button id="wypisz_wynik">Oblicz</button>
+              <button id="wyczysc">Wyczysc</button> <br><br>
+
+              <div id="wynik"></div>
+       </body>
+
+       <script>
+              const wypiszWynik = document.getElementById("wypisz_wynik")
+              const wyczysc = document.getElementById("wyczysc")
+
+              const wynik = document.getElementById("wynik")
+
+              const input1 = document.getElementById("liczba1")
+              const input2 = document.getElementById("liczba2")
+
+              function obliczWynik(liczba1, liczba2, opcja) {
+                     switch(opcja) {
+                            case 1:
+                                   return liczba1 + liczba2
+                            case 2:
+                                   return liczba1 - liczba2
+                            case 3:
+                                   return liczba1 * liczba2
+                            case 4:
+                                   if (liczba1 == 0 || liczba2 == 0) {
+                                          wynik.style.color = "rgb(255, 0, 0)"
+
+                                          return "Nie wolno dzielic przez zero!"
+                                   }
+
+                                   return liczba1 / liczba2
+                     }
+              }
+
+              function onWypiszWynik() {
+                     const liczba1 = parseInt(input1.value)
+                     const liczba2 = parseInt(input2.value)
+
+                     wynik.style.color = "rgb(0, 0, 0)"
+
+                     if (input1.value == "" || input2.value == "") {
+                            wynik.innerHTML = "Musisz podac dwie liczby!"
+                            wynik.style.color = "rgb(255, 0, 0)"
+
+                            return
+                     }
+
+                     const opcja = parseInt(document.getElementById("opcja").value)
+
+                     wynik.innerHTML = obliczWynik(liczba1, liczba2, opcja)
+              }
+
+              function onWyczysc() {
+                     input1.value = null
+                     input2.value = null
+              }
+
+              wypiszWynik.addEventListener("click", onWypiszWynik)
+              wyczysc.addEventListener("click", onWyczysc)
+       </script>
+</html>
