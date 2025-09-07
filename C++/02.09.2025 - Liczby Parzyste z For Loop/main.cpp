@@ -21,22 +21,6 @@ int main()
        // Naszym warunkiem jest to ze dopoki "i" jest mniejsze niz "n" (ktore uzytkownik podal wyzej w "cin") petla dziala
        // I na koniec po kazdej iteracji (czyli powtorzeniu) zwiekszamy "i" o 1 oraz "j" o 2
 
-       // Ponizej podaje przyklad dla n = 3
-       // Iteracja 1:
-       //     i = 0
-       //     j = 0
-
-       // Iteracja 2:
-       //     i = 1
-       //     j = 2
-
-       // Iteracja 3:
-       //     i = 2
-       //     j = 4
-
-       // Iteracja 4:
-       //     i = 4 czyli ta petla juz sie nie wykona bo nasz warunek to "i" jest mniejsze od "n" (czyli w tym przykladzie 3)
-       
        for (int i = 0, j = 0; i < n; i++, j+=2) 
        {
               cout << j << " "; // Wypisujemy nasza zmienna "j" i dodajemy po niej spacje
