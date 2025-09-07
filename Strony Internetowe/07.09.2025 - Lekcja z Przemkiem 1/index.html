@@ -25,25 +25,6 @@
               const input1 = document.getElementById("liczba1")
               const input2 = document.getElementById("liczba2")
 
-              function obliczWynik(liczba1, liczba2, opcja) {
-                     switch(opcja) {
-                            case 1:
-                                   return liczba1 + liczba2
-                            case 2:
-                                   return liczba1 - liczba2
-                            case 3:
-                                   return liczba1 * liczba2
-                            case 4:
-                                   if (liczba1 == 0 || liczba2 == 0) {
-                                          wynik.style.color = "rgb(255, 0, 0)"
-
-                                          return "Nie wolno dzielic przez zero!"
-                                   }
-
-                                   return liczba1 / liczba2
-                     }
-              }
-
               function onWypiszWynik() {
                      const liczba1 = parseInt(input1.value)
                      const liczba2 = parseInt(input2.value)
@@ -58,8 +39,31 @@
                      }
 
                      const opcja = parseInt(document.getElementById("opcja").value)
+                     let wynikLiczba = 0
 
-                     wynik.innerHTML = obliczWynik(liczba1, liczba2, opcja)
+                     switch(opcja) {
+                            case 1:
+                                   wynikLiczba = liczba1 + liczba2
+                                   break
+                            case 2:
+                                   wynikLiczba = liczba1 - liczba2
+                                   break
+                            case 3:
+                                   wynikLiczba = liczba1 * liczba2
+                                   break
+                            case 4:
+                                   if (liczba1 == 0 || liczba2 == 0) {
+                                          wynik.innerHTML = "Nie wolno dzielic przez zero!"
+                                          wynik.style.color = "rgb(255, 0, 0)"
+
+                                          return
+                                   }
+
+                                   wynikLiczba = liczba1 / liczba
+                                   break
+                     }
+
+                     wynik.innerHTML = wynikLiczba
               }
 
               function onWyczysc() {
