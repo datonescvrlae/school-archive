@@ -134,3 +134,21 @@ section, .random-ass-box{
 .ul-galeria li{
     margin-right: 12%;
 }
+
+.zdj1{
+    border-radius: 60px 10px;
+    border: 2px solid black;
+}
+
+.zdj2{
+    border-radius: 15px 40px 100px;
+    border: 3px dotted white;
+}
+
+.zdj3{
+    border: 6px double rgb(112, 112, 112);
+}
+
+.zdj4{
+    border: 4px ridge rgb(207, 207, 207);
+}
